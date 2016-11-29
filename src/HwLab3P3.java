@@ -10,9 +10,9 @@ public class HwLab3P3 {
         int m = HwLab3P4.readIntFromKeyboard();
 
         if(n % m == 0) {
-            System.out.println("True");
+            System.out.println("true");
         } else {
-            System.out.println("False");
+            System.out.println("false");
         }
         boolean x = n % m == 0;
         System.out.println(x);
