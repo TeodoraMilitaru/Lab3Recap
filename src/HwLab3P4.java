@@ -13,7 +13,8 @@ public class HwLab3P4 {
         int sum = 0;
         int product = 1;
         int max = 0;
-        for(int i = 1; i<= n; i++) {
+        int min = Integer.MAX_VALUE;
+        for(int i = 1; i <= n; i++) {
             int v = readIntFromKeyboard();
             System.out.println(v);
             sum += v;
@@ -22,10 +23,15 @@ public class HwLab3P4 {
                 max = v;
                 System.out.println("New max is " + v);
             }
+            if(v < min) {
+                min = v;
+                System.out.println("New min is " + v);
+            }
         }
         System.out.println("Sum is: " + sum);
         System.out.println("Product is " + product);
         System.out.println("Max is " + max);
+        System.out.println("Min is " + min);
     }
 
     public static int readIntFromKeyboard() {
