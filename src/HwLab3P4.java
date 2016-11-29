@@ -12,14 +12,20 @@ public class HwLab3P4 {
 
         int sum = 0;
         int product = 1;
+        int max = 0;
         for(int i = 1; i<= n; i++) {
             int v = readIntFromKeyboard();
             System.out.println(v);
             sum += v;
             product *= v;
+            if(v > max) {
+                max = v;
+                System.out.println("New max is " + v);
+            }
         }
         System.out.println("Sum is: " + sum);
         System.out.println("Product is " + product);
+        System.out.println("Max is " + max);
     }
 
     public static int readIntFromKeyboard() {
